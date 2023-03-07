@@ -142,11 +142,10 @@ function filterJobs(){
     let allJobs = document.querySelectorAll(".job")
     allJobs.forEach(k => {
         k.classList.remove("hidden-job")
-        console.log(k)
         for(const element of filterList) {
             if(!k.classList.contains(element)){
-                console.log(element)
                 k.classList.add("hidden-job")
+                console.log(k)
             }
         }
     })
